@@ -22,6 +22,6 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
     }
 
     fun restoreMana(amount: Int){
-//        Need to add functionality here
+        mana = minOf(100, mana + amount)
     }
 }
